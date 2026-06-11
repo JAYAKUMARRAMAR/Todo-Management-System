@@ -1,4 +1,4 @@
-import { NgModule, provideBrowserGlobalErrorListeners } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing-module';
@@ -12,7 +12,7 @@ import { ListTodosComponent } from './list-todos-component/list-todos-component'
 @NgModule({
   declarations: [App, WelcomeComponent, LoginComponent, ErrorComponent, ListTodosComponent],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
-  providers: [provideBrowserGlobalErrorListeners()],
+  providers: [],
   bootstrap: [App],
 })
 export class AppModule {}

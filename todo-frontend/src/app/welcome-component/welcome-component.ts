@@ -5,7 +5,7 @@ import { ActivatedRoute } from '@angular/router';
   selector: 'app-welcome-component',
   standalone: false,
   templateUrl: './welcome-component.html',
-  styleUrl: './welcome-component.css',
+  styleUrls: ['./welcome-component.css'],
 })
 export class WelcomeComponent implements OnInit{
  

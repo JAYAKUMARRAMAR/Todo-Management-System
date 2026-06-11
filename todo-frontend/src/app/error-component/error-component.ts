@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-error-component',
   standalone: false,
   templateUrl: './error-component.html',
-  styleUrl: './error-component.css',
+  styleUrls: ['./error-component.css'],
 })
 export class ErrorComponent {
   errorMessage: string = 'An Error Occured! Contact Support at ***-***-****';
