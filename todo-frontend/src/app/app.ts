@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { Component, OnInit, signal } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,6 +6,12 @@ import { Component, signal } from '@angular/core';
   standalone: false,
   styleUrl: './app.css'
 })
-export class App {
+export class App implements OnInit {
+
+  ngOnInit(): void 
+  {
+     console.log(this.message);
+  }
+  message:String="Some Welcome Message";
   protected readonly title = signal('todo-frontend');
 }
