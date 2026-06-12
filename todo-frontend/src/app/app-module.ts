@@ -10,6 +10,7 @@ import { ErrorComponent } from './error-component/error-component';
 import { ListTodosComponent } from './list-todos-component/list-todos-component';
 import { MenuComponent } from './menu-component/menu-component';
 import { FooterComponent } from './footer-component/footer-component';
+import { LogoutComponent } from './logout-component/logout-component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { FooterComponent } from './footer-component/footer-component';
     ListTodosComponent,
     MenuComponent,
     FooterComponent,
+    LogoutComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
