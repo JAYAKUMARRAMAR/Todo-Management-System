@@ -12,6 +12,7 @@ import { MenuComponent } from './menu-component/menu-component';
 import { FooterComponent } from './footer-component/footer-component';
 import { LogoutComponent } from './logout-component/logout-component';
 import { HttpClientModule } from '@angular/common/http';
+import { TodoComponent } from './todo-component/todo-component';
 
 @NgModule({
   declarations: [
@@ -23,9 +24,9 @@ import { HttpClientModule } from '@angular/common/http';
     MenuComponent,
     FooterComponent,
     LogoutComponent,
+    TodoComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, 
-            FormsModule, HttpClientModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
   bootstrap: [App],
 })

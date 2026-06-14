@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TodoData } from '../service/data/todo-data';
+import { Router } from '@angular/router';
 
 export class Todo {
   constructor(
@@ -21,7 +22,8 @@ export class ListTodosComponent implements OnInit {
   todos:Todo[] = [];
   message: any;
   
-  constructor(private todoData: TodoData) {}
+  constructor(private todoData: TodoData,
+              private router:Router) {}
   
   ngOnInit(){
     this.refreshTodos();
@@ -47,6 +49,7 @@ export class ListTodosComponent implements OnInit {
   updateTodo(id:any) 
   {
     console.log(`Update todo ${id}`);
+    this.router.navigate(['todos', id]);
   }
 
   // todos: Todo[] = [
